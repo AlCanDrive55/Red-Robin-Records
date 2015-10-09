@@ -1,0 +1,157 @@
+/* <----------- Music Player ----->  */
+
+.player {
+  	background: white;
+  	width: 18rem;
+  	height: 7em;
+  	margin: 0 0 0 0;
+  	bottom: 0;
+  	right: 0;
+  	position: fixed;
+  	-moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+  	-webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+  	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+  	z-index: 1 !important;
+}
+
+.progress {
+  	height: .5rem;
+  	width: 100%;
+  	background-color: #C0C0C0;
+}
+.progress .bar {
+  	height: 100%;
+  	background-color: #3E9CC8;
+}
+
+.playerClose{
+	color: #C0C0C0;
+	position: fixed;
+	right: 4px;
+	font-size: 0.8em;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select:none;
+  	user-select:none;
+  	-o-user-select:none;
+  	cursor: pointer;
+  	cursor: hand;
+}
+
+.playerClose:hover{
+	color: #3e9cc7;
+	background-color: #f3f3f3;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select:none;
+  	user-select:none;
+  	-o-user-select:none;
+  	cursor: pointer;
+  	cursor: hand;
+}
+
+.current-track figure.albumn-cover {
+  	float: left;
+  	width: 6.5rem;
+  	height: 6.5rem;
+}
+.current-track figure.albumn-cover img {
+  	max-width: 100%;
+ 	max-height: 100%;
+}
+
+.track-name {
+  	margin-left: 6rem;
+  	padding: .75rem;
+ 	min-width: 100%;
+}
+.track-name a {
+  	color: #333;
+  	min-width: 100%;
+  	text-decoration: none;
+}
+.track-name a:hover {
+  	text-decoration: underline;
+}
+.track-name h1 {
+	font-size: 1.25em;
+	margin-top: 7px;
+	width: 8.8em;
+	white-space: nowrap;
+	overflow-x:-webkit-marquee;
+	-webkit-marquee-direction: backwards;
+	-webkit-marquee-style: scroll;
+	-webkit-marquee-speed: 15;
+	-webkit-marquee-repetition: 5;
+	overflow: marquee-line;
+	overflow-x: marquee-line;
+  	marquee-direction: backwards;
+  	marquee-style: scroll;
+  	marquee-speed: fast;
+  	-webkit-marquee-increment: 1px;
+    -webkit-marquee-repetition: infinite;
+  	padding: 0 !important;
+}
+.track-name h2 {
+	min-width: 100%;
+	font-size: .75em;
+	font-weight: 300;
+	color: #C0C0C0;
+}
+.track-name h2 a {
+	min-width: 100%;
+	color: #C0C0C0;
+}
+
+.track-name h2 .artist {
+	font-weight: bold;
+}
+
+.track-name h2 a:hover {
+  	color: #3E9CC8;
+}
+
+.track-name h2 {
+	min-width: 100%;
+	font-size: .75em;
+	font-weight: 300;
+	color: #C0C0C0;
+}
+
+.track-name h3 {
+	min-width: 100%;
+	font-size: .75em;
+	font-weight: 200;
+	color: #C0C0C0;
+}
+
+.controls {
+  	color: #C0C0C0;
+  	width: 100%;
+}
+.controls ul {
+  	padding: 0;
+}
+.controls ul li {
+  	display: block;
+  	list-style: none;
+  	width: 14%;
+  	float: left;
+  	text-align: center;
+  	position: relative;
+  	height: 2rem;
+  	line-height: 2rem;
+  	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select:none;
+  	user-select:none;
+  	-o-user-select:none;
+  	cursor: pointer;
+  	cursor: hand;
+}
+.controls ul li.active, .controls ul li:hover {
+	color: #3e9cc7;
+}
+.controls ul li:hover {
+	background-color: #f3f3f3;
+}
